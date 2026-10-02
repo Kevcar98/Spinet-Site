@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Spinet — your music, your sources, your server</title>
+<meta name="description" content="A free, open-source music player for Windows, macOS, Linux and Android. Play what is on your device, what is on your own server, and what is online — as one library.">
+
+<meta property="og:title" content="Spinet">
+<meta property="og:description" content="A free, open-source music player. Your device, your server, online — one library.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="assets/icon.png">
+<meta name="theme-color" content="#0b0b0d">
+
+<link rel="icon" href="assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="nav">
+  <a class="brand" href="#top">
+    <img src="assets/icon.png" alt="" width="34" height="34">
+    <span>Spinet</span>
+  </a>
+  <nav>
+    <a href="#features">Features</a>
+    <a href="#download">Download</a>
+    <a href="#server">Your server</a>
+    <a href="#faq">FAQ</a>
+    <a class="ghost" href="https://github.com/Kevcar98/Spinet-Desktop" rel="noopener">GitHub</a>
+  </nav>
+</header>
+
+<main id="main">
+
+  <section class="hero" id="top">
+    <div class="hero-text">
+      <p class="eyebrow">Free · Open source · No accounts</p>
+      <h1>Your music.<br>Your sources.<br>Your server.</h1>
+      <p class="lede">
+        Spinet plays what is on your device, what is on a server you run, and
+        what is online — and treats the three as one library. No ads, no
+        subscription, no sign-in.
+      </p>
+      <div class="cta">
+        <a class="btn primary" href="#download">Download</a>
+        <a class="btn" href="https://github.com/Kevcar98/Spinet-Desktop" rel="noopener">View the source</a>
+      </div>
+      <p class="sub">Windows · macOS · Linux · Android · GPLv3</p>
+    </div>
+    <div class="hero-art">
+      <img src="assets/logo.png" alt="Spinet" width="420" height="420">
+    </div>
+  </section>
+
+  <section class="strip">
+    <div>
+      <h3>Plays what you already have</h3>
+      <p>A local copy first, your server next, online last. Nothing is fetched twice.</p>
+    </div>
+    <div>
+      <h3>Follows you between devices</h3>
+      <p>Playlists, likes and play counts sync through your own server.</p>
+    </div>
+    <div>
+      <h3>Files that make sense elsewhere</h3>
+      <p>Downloads carry real title, artist and cover art — not just a filename.</p>
+    </div>
+  </section>
+
+  <section id="features">
+    <h2>What it does</h2>
+    <div class="grid">
+      <article>
+        <h3>One library, three places</h3>
+        <p>
+          Search runs across every source you enable and merges the results.
+          Playback prefers the copy you already hold: device, then your server,
+          then online.
+        </p>
+      </article>
+      <article>
+        <h3>Find what you own</h3>
+        <p>
+          Filter any list by title or artist, and search your whole server
+          library rather than one folder at a time.
+        </p>
+      </article>
+      <article>
+        <h3>Correct covers and tags</h3>
+        <p>
+          Artwork and metadata come from iTunes, with karaoke and tribute
+          recordings rejected rather than matched — and a re-fetch that ignores
+          whatever a bad match left behind.
+        </p>
+      </article>
+      <article>
+        <h3>Background playback</h3>
+        <p>
+          Keeps playing when the phone is locked, with notification and
+          lock-screen controls. On the desktop: a mini player that stays on top,
+          taskbar controls and media keys.
+        </p>
+      </article>
+      <article>
+        <h3>Playlists that behave</h3>
+        <p>
+          Create them, import from CSV or a link, drag to reorder, swap in
+          alternate versions of a song. A playlist never holds the same song
+          twice.
+        </p>
+      </article>
+      <article>
+        <h3>Updates you control</h3>
+        <p>
+          The app checks GitHub for a new release, verifies the download against
+          a published SHA-256, and asks before installing anything.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <section id="download" class="download">
+    <h2>Download</h2>
+    <p class="section-lede">Latest release, straight from GitHub.</p>
+
+    <div class="cards">
+      <article class="card">
+        <h3>Windows</h3>
+        <p class="meta" data-version="desktop">Checking latest release…</p>
+        <a class="btn primary" data-asset="msi" href="https://github.com/Kevcar98/Spinet-Desktop/releases/latest" rel="noopener">Installer (.msi)</a>
+        <a class="btn" data-asset="portable" href="https://github.com/Kevcar98/Spinet-Desktop/releases/latest" rel="noopener">Portable (.zip)</a>
+        <p class="fineprint">The portable build keeps its settings beside it — run it from a USB stick and leave nothing behind.</p>
+      </article>
+
+      <article class="card">
+        <h3>Android</h3>
+        <p class="meta" data-version="mobile">Checking latest release…</p>
+        <a class="btn primary" data-asset="apk" href="https://github.com/Kevcar98/Spinet-Mobile/releases/latest" rel="noopener">APK</a>
+        <p class="fineprint">Sideloaded, so Android asks for permission to install it. Updates afterwards happen inside the app.</p>
+      </article>
+
+      <article class="card">
+        <h3>macOS &amp; Linux</h3>
+        <p class="meta">Build it from source</p>
+        <a class="btn" href="https://github.com/Kevcar98/Spinet-Desktop#run-it" rel="noopener">Instructions</a>
+        <p class="fineprint">The desktop build runs anywhere a JDK 17+ does; packaged installers are published for Windows only so far.</p>
+      </article>
+    </div>
+
+    <p class="verify">
+      Every release ships a <code>SHA256SUMS</code> file. The in-app updater
+      checks downloads against it automatically; if you download by hand, you
+      can too.
+    </p>
+  </section>
+
+  <section id="server" class="server">
+    <h2>Run your own server</h2>
+    <p class="section-lede">
+      Optional, and free. A small self-hosted library that stores your music and
+      serves it back to every device you use — upload from the phone, browse
+      folders as playlists, stream, delete. One <code>docker compose up</code>.
+    </p>
+
+    <!--
+      Instruction video.
+
+      Replace VIDEO_ID below with the YouTube id (the part after "v=") and the
+      embed appears in place of this panel. Keep the wrapper: it is what holds
+      the 16:9 shape on every screen width.
+    -->
+    <div class="video" data-youtube="VIDEO_ID">
+      <div class="video-placeholder">
+        <svg viewBox="0 0 24 24" width="56" height="56" aria-hidden="true"><path fill="currentColor" d="M8 5v14l11-7z"/></svg>
+        <p><strong>Setup walkthrough</strong></p>
+        <p class="fineprint">Video coming soon — the written steps are in the server repo.</p>
+      </div>
+    </div>
+
+    <ol class="steps">
+      <li>
+        <h3>Get a machine</h3>
+        <p>An Oracle Cloud Always Free instance costs nothing and is enough. Any box that runs Docker works.</p>
+      </li>
+      <li>
+        <h3>Get a hostname</h3>
+        <p>A free Duck DNS name is fine — the certificate is issued automatically either way. No domain purchase needed.</p>
+      </li>
+      <li>
+        <h3>Start the stack</h3>
+        <p>Clone the repo, set one line in <code>.env</code>, <code>docker compose up -d</code>.</p>
+      </li>
+      <li>
+        <h3>Point the app at it</h3>
+        <p>Settings → My Server → your host → Save. Every device you do this on shares the same library.</p>
+      </li>
+    </ol>
+
+    <a class="btn primary" href="https://github.com/Kevcar98/Spinet-Server" rel="noopener">Full setup guide</a>
+  </section>
+
+  <section id="faq">
+    <h2>Questions</h2>
+    <div class="faq">
+      <details>
+        <summary>Is it really free?</summary>
+        <p>Yes. No ads, no subscription, no account, no paid tier. It is GPLv3 software — you can read the code, change it, and share it.</p>
+      </details>
+      <details>
+        <summary>Do I need a server?</summary>
+        <p>No. Without one Spinet still plays music on your device and online. The server is what makes a library — and your playlists, likes and play counts — follow you between devices.</p>
+      </details>
+      <details>
+        <summary>Where does the music come from?</summary>
+        <p>Whatever sources you enable: your own server, a folder on your device, and online sources resolved in-app. You decide what is turned on.</p>
+      </details>
+      <details>
+        <summary>Can I download songs?</summary>
+        <p>Spinet can save audio from the sources it resolves, with title, artist and cover art embedded. Downloading copyrighted material may breach a provider's terms or your local law — that choice, and the responsibility for it, is yours. Spinet is a tool, not a licence.</p>
+      </details>
+      <details>
+        <summary>Does it track me?</summary>
+        <p>No analytics, no telemetry, no account. The only things it contacts are the sources you enable, your own server, and GitHub when it checks for an update.</p>
+      </details>
+      <details>
+        <summary>Why is the Android build sideloaded?</summary>
+        <p>It is distributed as an APK from GitHub releases rather than a store listing. Android will ask you to allow the install once; updates after that are handled inside the app.</p>
+      </details>
+    </div>
+  </section>
+
+  <section class="closing">
+    <h2>Start with the download.</h2>
+    <p>Add a server when you want your library on more than one device.</p>
+    <div class="cta">
+      <a class="btn primary" href="#download">Download Spinet</a>
+      <a class="btn" href="https://github.com/Kevcar98/Spinet-Server" rel="noopener">Set up a server</a>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="foot-grid">
+    <div>
+      <img src="assets/icon.png" alt="" width="28" height="28">
+      <p>Spinet — a free, open-source music player.</p>
+    </div>
+    <div>
+      <h4>Project</h4>
+      <a href="https://github.com/Kevcar98/Spinet-Desktop" rel="noopener">Desktop</a>
+      <a href="https://github.com/Kevcar98/Spinet-Mobile" rel="noopener">Android</a>
+      <a href="https://github.com/Kevcar98/Spinet-Server" rel="noopener">Server</a>
+    </div>
+    <div>
+      <h4>Licence</h4>
+      <a href="https://www.gnu.org/licenses/gpl-3.0.html" rel="noopener">GPL v3</a>
+      <p class="fineprint">You are free to use, study, share and improve it.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/app.js"></script>
+</body>
+</html>
