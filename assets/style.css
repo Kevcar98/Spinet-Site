@@ -190,6 +190,9 @@ section {
   margin-top: 26px;
   max-width: 70ch;
 }
+.verify strong { color: var(--text); font-weight: 600; }
+.verify a { color: var(--accent); text-decoration: none; }
+.verify a:hover { text-decoration: underline; }
 
 /* ---------- server ---------- */
 .video {
