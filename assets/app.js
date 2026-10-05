@@ -60,20 +60,19 @@
     load(key, REPOS[key]);
   });
 
-  // The video embed is only created once a real id is in the markup, so the
-  // page never loads a YouTube player (or its cookies) for a placeholder.
+  // The player is only created once a video file is named in the markup. The
+  // file is served from this site: no third-party player, no cookies.
   var video = document.querySelector(".video");
   if (video) {
-    var id = video.getAttribute("data-youtube");
-    if (id && id !== "VIDEO_ID") {
-      var frame = document.createElement("iframe");
-      frame.src = "https://www.youtube-nocookie.com/embed/" + id;
-      frame.title = "Setting up a Spinet server";
-      frame.allow = "accelerometer; clipboard-write; encrypted-media; picture-in-picture";
-      frame.referrerPolicy = "strict-origin-when-cross-origin";
-      frame.allowFullscreen = true;
+    var src = video.getAttribute("data-src");
+    if (src) {
+      var player = document.createElement("video");
+      player.src = src;
+      player.controls = true;
+      player.preload = "metadata";
+      player.title = "Setting up a Spinet server";
       video.innerHTML = "";
-      video.appendChild(frame);
+      video.appendChild(player);
     }
   }
 })();

@@ -27,17 +27,15 @@ Then open <http://127.0.0.1:8777>.
 
 ## Put the video in
 
-The server section has a placeholder where the walkthrough goes. Upload the
-video to YouTube, take the id from its URL — the part after `v=` — and put it in
-`index.html`:
+The server section has a placeholder where the walkthrough goes. Put the video
+file in `assets/` (an MP4 plays everywhere) and name it in `index.html`:
 
 ```html
-<div class="video" data-youtube="dQw4w9WgXcQ">
+<div class="video" data-src="assets/setup.mp4">
 ```
 
-The embed replaces the placeholder on its own. It only loads once a real id is
-there, so the page never pulls in a YouTube player (or its cookies) for a
-placeholder. The embed uses `youtube-nocookie.com`.
+The player replaces the placeholder on its own. The file is served from this
+site, so the page loads no third-party player and sets no cookies.
 
 ## Publish it
 
